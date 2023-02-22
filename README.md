@@ -1,2 +1,3 @@
-# react-chatbot
-A chatbot on NodeJS with the React frontend framework.
+# Web Chatbot
+
+A Web based chatbot with vanilla HTML, CSS and JS.
