@@ -1,0 +1,53 @@
+
+.header {
+    text-align: center;
+    background-color: rgb(255, 64, 147);
+    height: 5vh;
+    padding: 5vh ;
+    position: fixed;
+    width: 88%;
+}
+
+.heading {
+
+    font-variant: small-caps;
+    font-family:cursive ;
+    font-style: italic;
+    font-size: larger;
+    color: aliceblue;
+}
+
+.foot {
+    text-align: center;
+    background-color: rgb(255, 64, 147);
+    height: 1vh;
+    padding: 4vh ;
+    
+    position: fixed;
+    bottom: 1%;
+    width: 90%;
+}
+
+.mymsg {
+
+    width: 80vh;
+    border-color:rgb(255, 188, 217) ;
+    height: 3vh;
+    border-style: none;
+    border-radius: 6px;
+    border-width: 3px;
+}
+
+.send-btn {
+
+    height: 3vh;
+    background-color: white;
+    border-color: rgb(255, 188, 217);
+    border-style: none;
+    border-width: 3px;
+    border-radius: 6px;
+    font-style:italic ;
+    font-weight: 500;
+    font-family: cursive;
+    color: rgb(255, 52, 140);
+}
