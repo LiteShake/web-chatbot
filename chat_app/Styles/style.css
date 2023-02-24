@@ -1,3 +1,6 @@
+*{
+    font-family: cursive;
+}
 
 .header {
     text-align: center;
@@ -5,48 +8,88 @@
     height: 5vh;
     padding: 5vh ;
     position: fixed;
-    width: 94%;
+    width: 100%;
+    left: 0%;
+    top : 0%
 }
 
 .heading {
 
-    font-variant: small-caps;
-    font-family:cursive ;
     font-style: italic;
-    font-size: larger;
+
+    font-size: 170% ;
     color: aliceblue;
 }
 
 .foot {
     text-align: center;
     background-color: rgb(255, 64, 147);
-    height: 1vh;
-    padding: 4vh ;
+    height: 3%;
+    padding: 3vh ;
     
     position: fixed;
-    bottom: 1%;
-    width: 95%;
+    left: 0%;
+    bottom: 0%;
+    width: 100%;
 }
-.mymsg {
+#msg_field {
 
-    width: 140vh;
+    width: 60vh;
     border-color:rgb(255, 188, 217) ;
-    height: 3vh;
+    height: 4vh;
     border-style: none;
     border-radius: 6px;
     border-width: 3px;
+
+    font-style:italic ;
+    font-size: 100%;
+    font-weight: 500;
+    color: rgb(255, 52, 140);
 }
 
-.send-btn {
+#send-btn {
 
-    height: 3vh;
+    height: 4vh;
+    width: 10vh;
     background-color: white;
     border-color: rgb(255, 188, 217);
     border-style: none;
     border-width: 3px;
     border-radius: 6px;
+
     font-style:italic ;
+    font-size: 100%;
     font-weight: 500;
-    font-family: cursive;
     color: rgb(255, 52, 140);
 }
+
+#send-btn:hover {
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(254, 135, 187);
+}
+
+.usermsg {
+
+    background-color: rgba(254, 135, 186, 0.117);
+    border-radius: 6px;
+    padding: 3% ;
+    margin:3%;
+    text-align: right;
+}
+.botmsg {
+
+    background-color: rgba(254, 135, 187, 0.200);
+    border-radius: 6px;
+    padding: 3% ;
+    margin:3% ;
+    text-align: left;
+}
+.stuff {
+    margin:15% ;
+    font-style:italic ;
+    font-size: 111%;
+    font-weight: 500;
+    color: rgb(255, 52, 140);
+}
+

@@ -7,19 +7,19 @@
     <script src="./Scripts/script.js"></script>
     <link rel="stylesheet" href="./Styles/style.css">
 </head>
-<body>
-    <header class = 'header'>
-        <div class = "heading">
-            Some Random Chatbot that no one asked for 
-        </div>
-    </header>
-    <div class = "stuff">
-
+<header class = 'header'>
+    <div class = "heading">
+        Some Random Chatbot that no one asked for 
     </div>
-    <footer class = "foot">
-    
-        <input type="text" name="msg_field" id="msg_field">
-        <input type="button" value="Send", id = "send-btn">
-    </footer>
+</header>
+<body>
+    <div class = "stuff" id = "main-stuff">
+    </div>
 </body>
+<footer class = "foot">
+    <div class = "input-stuff">
+        <input type="text" name="msg_field" id="msg_field">
+        <button id = "send-btn" onclick="send_msg()" >Send</button>
+    </div>
+</footer>
 </html>
