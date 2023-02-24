@@ -1,4 +1,5 @@
+import generateReply from "./stella.js";
 
-var stella = require('./stella.js') ;
+console.log( generateReply ) ;
 
-console.log(stella.reply("(╯°□°）╯︵ ┻━┻")) ;
+// console.log(generateReply("(╯°□°）╯︵ ┻━┻")) ;

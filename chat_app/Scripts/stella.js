@@ -5,7 +5,7 @@ function getRandomFrom( arr ) {
     return randomElement ;
 }
 
-function generateReply( message ) {
+export function generateReply( message ) {
 
     wish_replies = [
         "Hellooo !",
@@ -46,4 +46,4 @@ function generateReply( message ) {
     } 
 }
 
-module.exports.reply = generateReply ;
+export default generateReply ;
