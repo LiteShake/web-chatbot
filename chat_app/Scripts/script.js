@@ -1,4 +1,4 @@
-var btn = document.getElementById("send-btn") ;
+import { reply } from './stella.js';
 
 function send_msg() {
 
@@ -19,8 +19,15 @@ function send_msg() {
 
     botBlock = document.createElement('div') ;
     botBlock.className = "botmsg" ;
-    botBlock.innerHTML = "I heard it !" ;
+    botBlock.innerHTML = reply( msg ) ;
 
     main_stuff = document.getElementById("main-stuff") ;
     main_stuff.appendChild( botBlock ) ;
 }
+
+$("msg_field").keyup(function(event) {
+
+    if(event.keyCode === 13) {
+        $("#send-btn").click() ;
+    }
+});
