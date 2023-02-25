@@ -64,7 +64,24 @@ function send_msg() {
     var userBlock = document.createElement('div') ;
 
     userBlock.className = "usermsg" ;
-    userBlock.innerHTML = msg ;
+    
+    
+    var speed = 80 ;
+    var i = 0; 
+    
+    setTimeout(userWrite, 300) ;
+
+    function userWrite() {
+    
+        if (i < msg.length) {
+        
+            userBlock.innerHTML += msg.charAt(i);
+            i++;
+            setTimeout(userWrite, speed );
+        }
+    }   
+
+
 
     main_stuff = document.getElementById("main-stuff") ;
     main_stuff.appendChild( userBlock ) ;
@@ -75,15 +92,30 @@ function send_msg() {
     var botImg = document.createElement('span') ;
     var botTxt = document.createElement('span') ;
     botTxt.className = "msgtxt"
-
-    botTxt.innerHTML = generateReply( msg ) ;
     
-    botBlock.appendChild( botImg ) ;
-    botBlock.appendChild( botTxt ) ;
+    // botBlock.appendChild( botImg ) ;
+    // botBlock.appendChild( botTxt ) ;
     
     var main_stuff = document.getElementById("main-stuff") ;
+    
     main_stuff.appendChild( botBlock ) ;
+    
+    i = 0 ;
+    var txt = generateReply( msg ) ;
+    console.log( txt ) ;
+    
+    botWrite() ;
 
+    function botWrite() {
+    
+        if (i < txt.length) {
+        
+            botBlock.innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(botWrite, speed );
+        }
+    }   
+    // botTxt.innerHTML = generateReply( msg ) ;
 }
 
 var btn = document.getElementById("send-btn") ;
