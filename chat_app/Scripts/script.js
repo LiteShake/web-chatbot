@@ -1,6 +1,6 @@
-import generateReply from "./stella.js";
+// import generateReply from "./stella.js";
+// import { spawn as spawner } from 'child_process';
 
-/*
 function getRandomFrom( arr ) {
 
     const randomElement = arr[Math.floor(Math.random() * arr.length)];
@@ -47,7 +47,7 @@ function generateReply( message ) {
             break ;
     } 
 }
-*/
+
 function send_msg() {
 
     
@@ -76,5 +76,5 @@ function send_msg() {
     main_stuff.appendChild( botBlock ) ;
 }
 
-var but = document.getElementById("send-btn")
-but.addEventListener('click', send_msg())
+var btn = document.getElementById("send-btn") ;
+btn.addEventListener('click', send_msg)
