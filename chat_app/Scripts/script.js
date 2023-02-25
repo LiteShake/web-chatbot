@@ -9,16 +9,16 @@ function getRandomFrom( arr ) {
 
 function generateReply( message ) {
 
-    wish_replies = [
+    var wish_replies = [
         "Hellooo !",
         "Hii !",
         "halloww"
     ] ;
-    uniResult = [
+    var uniResult = [
         "no", "nah", "Nope", "yeah lol", "sus !", "Yes", "what ?",
         "mm", "lol", "lmao", "No lol"
     ];
-    table_replies = [
+    var table_replies = [
         "Tables are fragile", 
         "Be careful ! ..Table will break",
         "no you cant break tables like that",
@@ -61,19 +61,29 @@ function send_msg() {
 
     console.log(generateReply( msg ) ) ;
 
-    userBlock = document.createElement('div') ;
+    var userBlock = document.createElement('div') ;
+
     userBlock.className = "usermsg" ;
     userBlock.innerHTML = msg ;
 
     main_stuff = document.getElementById("main-stuff") ;
     main_stuff.appendChild( userBlock ) ;
 
-    botBlock = document.createElement('div') ;
+    var botBlock = document.createElement('div') ;
     botBlock.className = "botmsg" ;
-    botBlock.innerHTML = generateReply( msg ) ;
 
-    main_stuff = document.getElementById("main-stuff") ;
+    var botImg = document.createElement('span') ;
+    var botTxt = document.createElement('span') ;
+    botTxt.className = "msgtxt"
+
+    botTxt.innerHTML = generateReply( msg ) ;
+    
+    botBlock.appendChild( botImg ) ;
+    botBlock.appendChild( botTxt ) ;
+    
+    var main_stuff = document.getElementById("main-stuff") ;
     main_stuff.appendChild( botBlock ) ;
+
 }
 
 var btn = document.getElementById("send-btn") ;

@@ -88,8 +88,12 @@
 .stuff {
     margin:15% ;
     font-style:italic ;
-    font-size: 111%;
+    font-size: 121%;
     font-weight: 500;
     color: rgb(255, 52, 140);
 }
+.msgtxt {
 
+    padding-left:3% ;
+    padding-right:3%;
+}
