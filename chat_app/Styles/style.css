@@ -47,6 +47,11 @@
     color: rgb(255, 52, 140);
 }
 
+.body {
+
+    margin: 0% ;
+}
+
 #send-btn {
 
     height: 4vh;
@@ -80,30 +85,32 @@
 
 .usermsg {
 
-    background-color: rgba(254, 135, 186, 0.117);
-    border-radius: 6px;
+    background-color: rgba(255, 90, 175, 0.581);
     padding: 10px ;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-top: 30px;
     text-align: right;
+
+    -webkit-backdrop-filter: blur(10px);
 }
 .botmsg {
 
-    background-color: rgba(254, 135, 187, 0.200);
+    background-color: rgba(255, 90, 175, 0.581);
     border-radius: 6px;
     padding: 10px ;
     margin-top: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 30px;
+    margin-left: 30px;
     text-align: left;
+    -webkit-backdrop-filter: blur(10px);
 }
 .stuff {
     margin:160px ;
     font-style:italic ;
     font-size: 121%;
     font-weight: 500;
-    color: rgb(255, 52, 140);
+    color: rgb(255, 255, 255);
 }
 .msgtxt {
 
@@ -116,4 +123,9 @@
     border-radius: 5px;
     padding-left: 16px ;
     padding-right: 16px ;
+}
+.back2 {
+    
+    background-image:url('./Assets/background1.png');   
+    width:100% ;
 }

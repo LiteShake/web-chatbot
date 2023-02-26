@@ -112,3 +112,13 @@ function send_msg() {
 
 var btn = document.getElementById("send-btn") ;
 btn.addEventListener('click', send_msg)
+
+const plx1 = document.getElementById("backimg1") ;
+const plx2 = document.getElementById("backimg2") ;
+
+window.addEventListener("scroll", function() {
+    // console.log("hi")
+    let offset = window.pageYOffset ;
+    plx1.style.backgroundPositionY = offset * 0.5 + 'px'
+    plx2.style.backgroundPositionY = offset * 0.7 + 'px'
+})
