@@ -116,6 +116,17 @@ btn.addEventListener('click', send_msg)
 const plx1 = document.getElementById("backimg1") ;
 const plx2 = document.getElementById("backimg2") ;
 
+var input = document.getElementById("msg_field");
+
+input.addEventListener( "keypress", function(event) {
+
+    if( event.key === "Enter" ) {
+
+        event.preventDefault();
+        document.getElementById("send-btn").click();
+    }
+} );
+
 window.addEventListener("scroll", function() {
     // console.log("hi")
     let offset = window.pageYOffset ;

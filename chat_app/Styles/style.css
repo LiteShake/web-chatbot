@@ -17,8 +17,16 @@
 
     font-style: italic;
 
-    font-size: 170% ;
+    font-size: 100% ;
     color: aliceblue;
+
+    transition: 0.4s ease-in-out;
+}
+
+.heading:hover {
+
+    background-color: white;
+    color: rgb(255, 64, 147);
 }
 
 .foot {
