@@ -68,20 +68,9 @@ function send_msg() {
     
     var speed = 80 ;
     var i = 0; 
-    
-    setTimeout(userWrite, 300) ;
-
-    function userWrite() {
-    
-        if (i < msg.length) {
-        
-            userBlock.innerHTML += msg.charAt(i);
-            i++;
-            setTimeout(userWrite, speed );
-        }
-    }   
-
-
+            
+    userBlock.innerHTML = msg ;
+    userBlock.innerHTML += "<img src=\"/Scripts/Assets/user.png\" alt=\"user_pic\" height=35 class=\"profile_imgs\">"
 
     main_stuff = document.getElementById("main-stuff") ;
     main_stuff.appendChild( userBlock ) ;
@@ -105,6 +94,9 @@ function send_msg() {
     console.log( txt ) ;
     
     botWrite() ;
+
+    botBlock.innerHTML = "<img src=\"/Scripts/Assets/stla_hi.png\" alt=\"stella_pic\" height=35 class=\"profile_imgs\">"
+    txt = " " + txt ;
 
     function botWrite() {
     
